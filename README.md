@@ -10,7 +10,7 @@ Open a terminal:
 
 `git clone <dir>`
 
-`cd 491-scheduler`
+`cd 491-repo`
 
 `cd pb_app`
 
