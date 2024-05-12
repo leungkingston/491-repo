@@ -1,0 +1,634 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding-top: 70px;
+}
+.loginbod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #61828A;
+  padding-top: initial;
+}
+.login {
+  height: 520px;
+  width: 420px;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.regn h1,
+.login h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.login h2{
+  font-size: 25px;
+  padding-left:12%;
+}
+
+.regn .input-box,
+.login .input-box{
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  padding-bottom: 20px;
+}
+.input-box input{
+  width: 92%;
+  height: 100%;
+  background: transparent;
+  border:none;
+  outline:none;
+  border: 2px solid rgba(97, 130, 138, 1);
+  border-radius: 40px;
+}
+.loginButton{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.prepButton{
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.loginb{
+  height: 60px;
+  width: 800px;
+  border-radius: 40px;
+  border: none;
+  padding: 1px 5px;
+}
+.calcb{
+  height: 60px;
+  width: 100px;
+  border-radius: 40px;
+  border: none;
+  padding: 1px;
+}
+
+.dontacc{
+  scale: 80%;
+  display: flex;
+  justify-content: center;
+}
+.dontareg{
+  height: initial;
+  width: initial;
+  scale: 120%;
+  border-radius: inital;
+  border: none;
+  padding-left: 20px;
+  background: transparent;
+}
+.topnav {
+  display: flex;
+  flex-direction: row-reverse; 
+  overflow: hidden;
+  background-color: #61828A;
+  padding-right: 10rem;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.5s;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav a.tlogo {
+  color: #f2f2f2;
+  scale: 150%;
+}
+.topnav a.tlogo:hover {
+  background-color: initial; 
+  transition: initial; 
+}
+.topnav a.logoutbutt,
+.topnav a.regbutt {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.logoutbutt:hover {
+  background-color: rgb(190, 76, 76);
+  color: #f2f2f2;
+  transition: 0.5s;
+}
+
+.topnav a.regbutt:hover {
+  background-color: rgb(40, 209, 167);
+  color: #f2f2f2;
+  transition: 0.5s;
+}
+.nextTo {
+  display: inline;
+}
+.rick {
+  width: 100px;
+}
+.rick:hover span {
+  display: none;
+}
+.rick:hover:before {
+  content: "Rolled";
+}
+.rick:hover {
+  background-color: #ddd;
+  transition: 0.5s;
+}
+.boottoon {
+  float: left;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 15px;
+  background-color: #61828A;
+}
+
+.boottoon:hover {
+  background-color: #60bfd6;
+  transition: 0.5s;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: #61828A;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* this is new stuff*/
+
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.smallert{
+  margin: 5px;
+  margin-top: 40px;
+}
+.menu {
+  width: 100%;
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: solid;
+  background-color: black;
+}
+
+.menu-item,
+.blank {
+  list-style-type: none;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-grow: 1;
+  font-size: 13px;
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+}
+
+.blank {
+  flex-grow: 2;
+}
+
+h2 {
+  display: inline;
+  margin: 15% 25%;
+  color: rgb(0, 0, 0);
+  padding-bottom: 2rem;
+}
+
+.home {
+  background-color: rgb(255, 255, 255);
+  margin: 5% 25%;
+  line-height: 35px;
+  padding: 30px;
+  border-radius: 15px;
+  border: solid;
+}
+.title h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.title h1::after {
+  content: "";
+  height: 2px;
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+.features {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px auto;
+  width: 85%;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 25px;
+  padding: 25px 25px;
+  border-radius: 12px;
+  background-color: rgba(136, 136, 124, 0.178);
+  width: 360px;
+  height: 500px;
+}
+.icon {
+  font-size: 40px;
+}
+.card h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.card p {
+  font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 170%;
+}
+footer {
+  margin: 7% 20%;
+}
+
+.add-new {
+  display: inline;
+  margin: 10% 5%;
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+}
+input {
+  margin-bottom: 5%;
+  height: 30px;
+  width: 95%;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+button {
+  height: 55px;
+  width: 70px;
+  border-radius: 5px;
+  border: none;
+  padding: 1px 5px;
+}
+.lbut {
+  height: 55px;
+  width: 100px;
+}
+a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+}
+
+a:hover {
+  text-shadow: 1px 1px 1px white;
+  transition: 0.5s;
+}
+
+.add {
+  width: 50%;
+  height: 40px;
+  display: block;
+}
+
+.purchase-history {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-section {
+  display: flex;
+  padding: 30px;
+  padding-right: 50px;
+  flex-direction: column;
+  margin: 40px auto;
+  border: solid;
+  height: 100%;
+  width: 70%;
+  border-radius: 15px;
+}
+.tab-container {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
+.tab {
+  border: double;
+  border-radius: 20px;
+  border-color: rgb(75, 75, 75);
+  border-width: 7px;
+  padding: 10px;
+  height: 100%;
+  width: 300px;
+  margin: 10px;
+  background-color: rgb(230, 230, 230);
+  color: rgb(67, 62, 62);
+}
+.tab-container::after {
+  content: "";
+  flex: auto; 
+}
+
+@media screen and (max-width: 768px) {
+  .tab-container {
+    justify-content: flex-start; 
+  }
+}
+
+.item {
+  color: rgb(44, 44, 44);
+  margin: 5px;
+}
+
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add:hover,
+.load > button:hover {
+  background-color: rgb(16, 60, 148);
+  color: #f2f2f2;
+  transition: 0.5s;
+}
+
+.etitle {
+  display: flex !important;
+  margin: 0 !important;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.delete-form {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.delete {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+.delete:hover {
+  background-color: rgb(138, 3, 3);
+  transition: 0.5s;
+}
+.total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.totalv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+@media screen and (max-width: 940px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 85%;
+    display: flex;
+    margin: 20px 0px;
+  }
+}
+
+/* newhomepage */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f0f0f0;
+  }
+  .container-feat {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    background-color: #f0f0f0;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+.image-container {
+    position: relative;
+    width: 100%; 
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(133, 132, 132, 0.4), rgba(107, 107, 107, 0.438));
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 24px; 
+}
+.bigtitle {
+  font-size: 4vw; 
+}
+.sub-text{
+  margin-top: 0px;
+}
+.stbutton{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  padding: 1px 5px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.705);
+}
+.picofperson{
+  max-width: 600px; 
+  width: 32%; 
+  height: auto; 
+  margin-left: 13%;
+  margin-right: 7%; 
+}
+.boutcard {
+  margin-top: 100px;
+  height: max-content;
+  width: auto;
+  line-height: 35px;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+}
+.text-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10%;
+}
+.regn {
+  height: 620px;
+  width: 420px;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.underline-header {
+  position: relative;
+}
+
+.underline-header:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #000; 
+  position: absolute;
+  bottom: -5px; 
+  left: 50%;
+  transform: translateX(-50%); 
+}
+.section-f{
+  scale: 90%;
+}
+.contactbod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: initial;
+}
+.contact {
+  height: 550px;
+  width: 50%;
+  background: #eff5d9;
+  color: #000000;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  grid-template-columns: repeat(2,1fr);
+  display: grid;
+}
+.rightcont{
+  background: #8FBCBB;
+  height: 100%;
+  width: 100%;
+}
+.touchtext{
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.contimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  height: 300px;
+  width: 300px;
+}
+.cont-form{
+  padding: 0 50px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.cont-input{
+  width: 65%;
+  height: 50px;
+  padding-bottom: 20px;
+}
+.cont-input textarea{
+  width: 105%;
+  height: 400%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  padding: 5px 10px;
+  resize: none;
+}
+.cont-b{
+  margin-top: 170px;
+  background-color: #61828A;
+  color: white;
+}
